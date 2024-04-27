@@ -1,3 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  word-wrap: break-word;
+} 
+p {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.topgif{
+  display: block;
+  width: 100%;
+  border: none !important;
+}
 .center {
     display: block;
     width: 100%;
@@ -7,25 +22,21 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
-  
 a:visited {
     color: #f79100;
     background-color: transparent;
     text-decoration: none;
   }
-  
 a:hover {
     color: #f74e00;
     background-color: transparent;
     text-decoration: underline;
   }
-  
 a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
   }
-
 body{
     background-color: #502e5b;
     color: #ffcd43;
