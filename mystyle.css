@@ -11,7 +11,7 @@ p {
 .topgif{
   display: block;
   width: 100%;
-  border: none !important;
+  border: none;
 }
 .center {
     display: block;
