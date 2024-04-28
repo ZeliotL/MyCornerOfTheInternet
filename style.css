@@ -1,4 +1,4 @@
-html, body {
+html, body, marquee {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -17,6 +17,39 @@ p {
     display: block;
     width: 100%;
   }
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.banner-button{
+  background-color: #ffb300;
+  color: #502e5b;
+  border: none;
+  margin: 0;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  width: calc(100% / 4);
+  transition-duration: 0.2s;
+  float: left;
+}
+.banner-button:hover {
+  background-color: #502e5b;
+  color: #ffb300;
+}
+.disabled {
+  background-color: #502e5b;
+  color: #ffb300;
+  cursor: not-allowed;
+}
+.stick{
+  position: sticky;
+  top: 0;
+}
 a:link {
     color: #f79100;
     background-color: transparent;
