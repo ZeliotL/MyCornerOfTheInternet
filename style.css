@@ -18,21 +18,22 @@ p {
     width: 100%;
   }
 .footer {
-  position: absolute;
+  position: bottom;
   bottom: 0;
   left: 0;
   z-index: 10;
 }
 .banner-button {
   background-color: #ffb300;
+  display: inline;
   color: #502e5b;
   margin: 0;
-  padding: 3px;
+  padding: 25px;
   text-align: center;
   text-decoration: none;
   font-size: 30px;
   font-weight: 900;
-  width: calc(100% / 4);
+  width: calc(100% / 5);
   transition-duration: 0.2s;
   float: left;
   border: solid #ffb300 1px;
@@ -49,12 +50,30 @@ p {
   color: #ffb300;
   cursor: not-allowed;
 }
+.banner-background{
+  color: #ffb300;
+  flood-color: #ffb300;
+}
+.face{
+  padding: 4.5px !important;
+  height: 93px;
+  background-image: url(Images/smile.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: solid #ffb300 10px;
+}
+.face:hover{
+  background-color: #ffb300;
+  background-image: url(Images/woah.png);
+}
 .stick {
-  background-color: #ffb300 !important;
+  position: sticky !important;
+  display: inline-block;
   width: 100%;
-  height: 51px;
-  position: sticky;
-  top: 0;
+  height: 100px;
+  top: 0px;
+  background-color: #ffb300;
 }
 a:link {
     color: #f79100;
@@ -79,4 +98,28 @@ a:active {
 body{
     background-color: #502e5b;
     color: #ffcd43;
+}
+.videos{
+  display: flex;
+  justify-content: center;
+}
+
+iframe{
+  padding: 0.5rem;
+}
+
+svg{
+  position: relative;
+  display: inline-block;
+  left: 0px;
+  top: 0px;
+}
+
+.wave-container{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  top: 0px;
+  z-index: -10;
+  background-image: linear-gradient(#502e5b 40%, transparent);
 }
