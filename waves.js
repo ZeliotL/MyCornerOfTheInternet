@@ -28,7 +28,7 @@ function waves(){
 
     setInterval(() => {
         const svgWidth = window.innerWidth;
-        svg.setAttribute("width", svgWidth);
+        svg.setAttribute("width", window.innerWidth);
         phaseBase += 0.01;
         let pathData = `M 0 0`
     
