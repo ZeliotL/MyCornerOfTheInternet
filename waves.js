@@ -10,13 +10,13 @@ function waves(){
     //global sine variables
     var phaseBase = 0.1;
     //sine 1
-    const frequency1 = 0.15;
+    const frequency1 = 0.03;
     const amplitude1 = 5;
-    const phase1 = 1;
+    const phase1 = -0.65;
     //sine 2
-    const frequency2 = 0.1;
+    const frequency2 = 0.025;
     const amplitude2 = 5;
-    const phase2 = 0.5;
+    const phase2 = -0.5;
     //sine 3
     const frequency3 = 0.05;
     const amplitude3 = 5;
@@ -25,7 +25,7 @@ function waves(){
     const frequency4 = 0.01;
     const amplitude4 = 10;
     const phase4 = 0.2;
-
+    
     setInterval(() => {
         var svgWidth = window.innerWidth;
         svg.setAttribute("width", svgWidth);
@@ -36,7 +36,7 @@ function waves(){
             const sine1 = amplitude1 * Math.sin(frequency1 * index + (phase1 * phaseBase));
             const sine2 = amplitude2 * Math.sin(frequency2 * index + (phase2 * phaseBase));
             const sine3 = amplitude3 * Math.sin(frequency3 * index + (phase3 * phaseBase));
-            const sine4 = amplitude4 * Math.sin(frequency4 * index + phase4 * phaseBase);
+            const sine4 = amplitude4 * Math.sin(frequency4 * index + (phase4 * phaseBase));
             const y = (sine1 + sine2 + sine3 + sine4) + svgHeight/2;
             pathData += `L ${index} ${y}`;
         }
