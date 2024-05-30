@@ -1,5 +1,5 @@
 function waves(){
-    const svgWidth = window.innerWidth;
+    var svgWidth = window.visualViewport.width;
     const svgHeight = 50;
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
@@ -27,12 +27,12 @@ function waves(){
     const phase4 = 0.2;
     
     setInterval(() => {
-        var svgWidth = window.innerWidth;
+        svgWidth = window.visualViewport.width;
         svg.setAttribute("width", svgWidth);
         phaseBase += 0.01;
         let pathData = `M 0 0`
     
-        for (let index = 0; index < svgWidth; index++) {
+        for (let index = 0; index <= svgWidth; index++) {
             const sine1 = amplitude1 * Math.sin(frequency1 * index + (phase1 * phaseBase));
             const sine2 = amplitude2 * Math.sin(frequency2 * index + (phase2 * phaseBase));
             const sine3 = amplitude3 * Math.sin(frequency3 * index + (phase3 * phaseBase));
@@ -41,7 +41,7 @@ function waves(){
             pathData += `L ${index} ${y}`;
         }
     
-        pathData += `L ${svgWidth} ${svgHeight} L ${svgWidth} 0 Z`
+        pathData += `L ${svgWidth} 0 L ${svgWidth} 0 Z`
     
     
      
