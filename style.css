@@ -34,6 +34,7 @@ p {
   font-size: 30px;
   font-weight: 900;
   width: calc(100% / 5);
+  height: 100px;
   transition-duration: 0.2s;
   float: left;
   border: solid #ffb300 1px;
@@ -56,7 +57,7 @@ p {
 }
 .face{
   padding: 4.5px !important;
-  height: 93px;
+  height: 100px;
   background-image: url(Images/smile.png);
   background-size: contain;
   background-position: center center;
