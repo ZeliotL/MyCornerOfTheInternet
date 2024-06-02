@@ -34,7 +34,7 @@ function waves(){
     
         for (let index = 0; index <= svgWidth; index++) {
             const sine1 = amplitude1 * Math.sin(frequency1 * index + (phase1 * phaseBase));
-            const sine2 = amplitude2 * Math.sin(frequency2 * index + (phase2 * phaseBase));
+            const sine2 = amplitude2 * Math.sin((frequency2) * index + (phase2 * phaseBase));
             const sine3 = amplitude3 * Math.sin(frequency3 * index + (phase3 * phaseBase));
             const sine4 = amplitude4 * Math.sin(frequency4 * index + (phase4 * phaseBase));
             const y = (sine1 + sine2 + sine3 + sine4) + svgHeight/2;
