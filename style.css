@@ -130,14 +130,37 @@ svg{
   width: 100%;
 }
 .card{
+  transform-origin: 20px 20px;
+  transition: 0.2s;
   display: inline-block;
   position: relative;
   width: 580px;
   height: 600px;
-  margin: 10px;
-  background-color: #371e3f;
+  margin: 25px;
+  background-color: #371941;
   vertical-align: middle;
   text-align: center;
+  border-radius: 15px;
+  border-top-left-radius: 50px;
+  border: thick solid #28102f;
+  box-shadow: 40px 40px 20px -20px rgba(0, 0, 0, 0.5);
+}
+.card:hover{
+  transition: 0.2s;
+  rotate: -2deg;
+  background-color: #371941;
+}
+.card-shadow{
+  z-index: -1;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 85px;
+  left: 85px;
+  border-radius: 5px;
+  border-top-left-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.192);
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.192);
 }
 .card-title{
   font-size: 24px;
@@ -149,4 +172,10 @@ svg{
   margin-right: 50px;
   text-align: left;
   font-size: 16px;
+}
+.card-ring{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 60px;
 }
