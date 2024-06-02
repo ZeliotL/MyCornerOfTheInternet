@@ -138,7 +138,7 @@ svg{
   width: 580px;
   height: 600px;
   margin: 25px;
-  background-color: #371941;
+  background-color: #3b1c46;
   vertical-align: middle;
   text-align: center;
   border-radius: 15px;
@@ -149,7 +149,6 @@ svg{
 .card:hover{
   transition: 0.2s;
   rotate: -2deg;
-  background-color: #371941;
 }
 .card-shadow{
   z-index: -1;
