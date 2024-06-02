@@ -5,8 +5,8 @@ html, body, marquee {
   word-wrap: break-word;
 } 
 p {
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .topgif {
   display: block;
@@ -75,6 +75,7 @@ p {
   height: 100px;
   top: 0px;
   background-color: #ffb300;
+  z-index: 10;
 }
 a:link {
     color: #f79100;
@@ -123,4 +124,29 @@ svg{
   top: 0px;
   z-index: -10;
   background-image: linear-gradient(#502e5b 40%, transparent);
+}
+/*/ project cards and their collector */
+.card-collection{
+  width: 100%;
+}
+.card{
+  display: inline-block;
+  position: relative;
+  width: 580px;
+  height: 600px;
+  margin: 10px;
+  background-color: #371e3f;
+  vertical-align: middle;
+  text-align: center;
+}
+.card-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+}
+.card-desc{
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: left;
+  font-size: 16px;
 }
