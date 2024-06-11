@@ -18,12 +18,6 @@ p {
     display: block;
     width: 100%;
   }
-.footer {
-  position: bottom;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-}
 .banner-button {
   background-color: #ffb300;
   display: inline;
@@ -91,14 +85,14 @@ a:visited {
 a:hover {
     color: #f74e00;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
 a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
   }
-body{
+body, button{
     background-color: #502e5b;
     color: #ffcd43;
 }
@@ -126,6 +120,7 @@ svg{
   z-index: -10;
   background-image: linear-gradient(#502e5b 40%, transparent);
 }
+
 /*/ project cards and their collector */
 .card-collection{
   width: 100%;
@@ -135,20 +130,23 @@ svg{
   transition: 0.2s;
   display: inline-block;
   position: relative;
-  width: 580px;
-  height: 600px;
-  margin: 25px;
+  width: 600px;
+  height: 700px;
   background-color: #3b1c46;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: center;
   border-radius: 15px;
   border-top-left-radius: 50px;
   border: thick solid #28102f;
-  box-shadow: 40px 40px 20px -20px rgba(0, 0, 0, 0.5);
+  box-shadow: 40px 40px 20px -20px #2007278f;
+  margin: 25px;
+  color: #ffcd43;
 }
 .card:hover{
   transition: 0.2s;
   rotate: -2deg;
+  scale: 105%;
+  margin: 35px;
 }
 .card-shadow{
   z-index: -1;
@@ -185,4 +183,49 @@ svg{
   left: 10px;
   top: 10px;
   width: 60px;
+}
+.card-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* youtube formatting */
+.youtube-video{
+  width: 85%;
+  height: auto;
+  margin: 10px;
+  aspect-ratio: 16 / 9 !important;
+  border-radius: 25px;
+  border: 4px dotted #ffb300;
+  padding: 0px;
+}
+
+/*Footer stuff*/
+.footer {
+  position: fixed;
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  background-color: #ffb300;
+  color: #502e5b !important;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+}
+.footer:link{
+  color: #502e5b !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+ul{
+
+}
+.listthingy{
+  display: inline-block;
+  position: relative;
+  align-self: center;
 }
