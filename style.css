@@ -63,7 +63,7 @@ p {
   background-color: #ffb300;
   background-image: url(Images/woah.png);
 }
-.stick {
+.banner {
   position: sticky !important;
   display: inline-block;
   width: 100%;
@@ -112,7 +112,7 @@ svg{
   top: 0px;
 }
 
-.wave-container{
+.banner-waves{
   display: inline-block;
   position: relative;
   width: 100%;
@@ -205,7 +205,7 @@ svg{
 .footer {
   position: fixed;
   display: inline-block;
-  height: 100px;
+  height: 35px;
   width: 100%;
   background-color: #ffb300;
   color: #502e5b !important;
@@ -221,8 +221,14 @@ svg{
   background-color: transparent;
   text-decoration: none;
 }
-ul{
-
+.footer-waves{
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  top: -60px;
+  left: 0;
+  z-index: -10;
+  background-image: linear-gradient(transparent, #502e5b 60% 50px, transparent 60px);
 }
 .listthingy{
   display: inline-block;
