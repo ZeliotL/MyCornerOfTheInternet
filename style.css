@@ -63,7 +63,7 @@ p {
 .face{
   padding: 4.5px !important;
   height: 50px;
-  background-image: url(Images/smile.gif);
+  background-image: url('/Images/smile.gif');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
