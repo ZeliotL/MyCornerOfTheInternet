@@ -10,24 +10,25 @@ function waves(){
     //global sine variables
     var phaseBase = 0.1;
     var randomMultiplier = 100;
+    var masterSize = 1.25;
     //sine 1
-    const frequency1 = 0.03;
-    const amplitude1 = 5;
+    const frequency1 = 0.03 * masterSize;
+    const amplitude1 = 5 / masterSize;
     const phase1 = -0.65;
     const offset1 = (Math.random() * randomMultiplier)
     //sine 2
-    const frequency2 = 0.025;
-    const amplitude2 = 5;
+    const frequency2 = 0.025 * masterSize;
+    const amplitude2 = 5 / masterSize;
     const phase2 = -0.5;
     const offset2 = (Math.random() * randomMultiplier)
     //sine 3
-    const frequency3 = 0.05;
-    const amplitude3 = 5;
+    const frequency3 = 0.05 * masterSize;
+    const amplitude3 = 5 / masterSize;
     const phase3 = -0.25;
     const offset3 = (Math.random() * randomMultiplier)
     //sine 4
-    const frequency4 = 0.01;
-    const amplitude4 = 10;
+    const frequency4 = 0.01 * masterSize;
+    const amplitude4 = 10 / masterSize;
     const phase4 = 0.2;
     const offset4 = (Math.random() * randomMultiplier)
     
@@ -56,7 +57,7 @@ function waves(){
         svg.appendChild(path);
         const waveContainer = document.getElementById("banner-waves");
         waveContainer.appendChild(svg);
-        path.setAttribute("fill", "#ffb300");                     
+        path.setAttribute("fill", "#ffb300");
     }, 2);
 }
 

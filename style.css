@@ -1,10 +1,20 @@
+html:lang(en)
+
 html, body, marquee {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   margin: 0;
   padding: 0;
   text-align: center;
   word-wrap: break-word;
   font-family: sans-serif;
 } 
+html::-webkit-scrollbar{
+  display: none;
+}
+body{
+  margin-bottom: 100px;
+}
 p {
   padding-left: 5px;
   padding-right: 5px;
@@ -23,15 +33,15 @@ p {
   display: inline;
   color: #502e5b;
   margin: 0;
-  padding: 25px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   font-size: 30px;
   font-weight: 900;
-  width: calc(100% / 5);
-  height: 100px;
+  width: calc(50% / 4.5);
+  height: 50px;
   transition-duration: 0.2s;
-  float: left;
+  float: right;
   border: solid #ffb300 1px;
   border-top: 0px;
   border-bottom-left-radius: 12px;
@@ -52,12 +62,13 @@ p {
 }
 .face{
   padding: 4.5px !important;
-  height: 100px;
-  background-image: url(Images/smile.png);
+  height: 50px;
+  background-image: url(Images/smile.gif);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  border: solid #ffb300 10px;
+  margin-top: 5px;
+  border: solid #ffb300 0px;
 }
 .face:hover{
   background-color: #ffb300;
@@ -67,7 +78,7 @@ p {
   position: sticky !important;
   display: inline-block;
   width: 100%;
-  height: 100px;
+  height: 55px;
   top: 0px;
   background-color: #ffb300;
   z-index: 10;
@@ -118,13 +129,14 @@ svg{
   width: 100%;
   top: 0px;
   z-index: -10;
-  background-image: linear-gradient(#502e5b 40%, transparent);
+  background-image: linear-gradient(#472553 40%, transparent);
 }
 
 /*/ project cards and their collector */
 .card-collection{
   width: 100%;
 }
+
 .card{
   transform-origin: 20px 20px;
   transition: 0.2s;
@@ -141,6 +153,7 @@ svg{
   box-shadow: 40px 40px 20px -20px #2007278f;
   margin: 25px;
   color: #ffcd43;
+  white-space: wrap;
 }
 .card:hover{
   transition: 0.2s;
@@ -215,6 +228,7 @@ svg{
   text-align: center;
   font-size: 16px;
   font-weight: 900;
+  margin-top: 60px;
 }
 .footer:link{
   color: #502e5b !important;
@@ -228,10 +242,45 @@ svg{
   top: -60px;
   left: 0;
   z-index: -10;
-  background-image: linear-gradient(transparent, #502e5b 60% 50px, transparent 60px);
+  background-image: linear-gradient(transparent, #472553 60% 50px, transparent 60px);
 }
-.listthingy{
-  display: inline-block;
+/*scroll menu*/
+.scrollable{
   position: relative;
-  align-self: center;
+  margin: auto;
+  overflow: auto;
+  scrollbar-color: #ffb300 #472553;
+  white-space: nowrap;
+  height: 800px;
+  width: 100%;
+  mask: linear-gradient(to right, transparent, white 5% 95% , transparent);
+  border-radius: 25px;
+}
+.scrollable-background{
+  border: 4px dotted #ffb300;
+  position: relative;
+  background-color: #5a266b;
+  background-image: linear-gradient(to right, #240e2c, #5a266b 20% 80% , #240e2c);
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+/*video styling*/
+.video-collection{
+  display: inline-grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr;
+}
+.video{
+  aspect-ratio: 16 / 9 !important;
+  border-radius: 25px;
+  border: 4px dotted #ffb300;
+}
+.video.linked{
+  width: 80%;
+  border: none;
+  margin: auto;
+}
+.video.preview{
+  width: 100%;
+  height: auto;
 }
