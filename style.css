@@ -28,6 +28,13 @@ p {
     display: block;
     width: 100%;
   }
+/*/banner/*/
+.bannerLogo{
+  width: 15rem;
+  position: absolute;
+  left: 1rem;
+  top: .5rem;
+}
 .banner-button {
   background-color: #ffb300;
   display: inline;
@@ -187,7 +194,7 @@ svg{
 }
 .card-desc{
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 100px;
   text-align: left;
   font-size: 20px;
 }
@@ -202,16 +209,25 @@ svg{
   margin-left: auto;
   margin-right: auto;
 }
+.card-logo{
+  width: 5rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
 
 /* youtube formatting */
 .youtube-video{
   width: 85%;
   height: auto;
-  margin: 10px;
+  margin: 2.5rem;
   aspect-ratio: 16 / 9 !important;
   border-radius: 25px;
   border: 4px dotted #ffb300;
   padding: 0px;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
 }
 
 /*Footer stuff*/
